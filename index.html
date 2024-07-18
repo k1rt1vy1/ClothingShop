@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/1110.css" media="screen and (max-width: 1110px)"
+</head>
+
+<body>
+    <nav id="navbar" class="font">
+        <img src="img/kayo_logo.jpg" alt="kayo....yes!!">
+        <div id="search">
+            <input type="text" placeholder="Search your product">
+            <div class="btn">
+                <a href="">Search</a>
+            </div>
+        </div>
+        <div class="icons">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-regular fa-user"></i>
+        </div>
+    </nav>
+
+    <div class="slider-container" onmouseover="stopAutoSlide()" onmouseout="startAutoSlide()">
+        <div class="heading font">Best Seller</div>
+        <div class="slides">
+          <div class="slide"><img src="https://images.pexels.com/photos/5119398/pexels-photo-5119398.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Slide 1" class="imgSlide"></div>
+          <div class="slide"><img src="https://images.pexels.com/photos/2517866/pexels-photo-2517866.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Slide 2" class="imgSlide"></div>
+          <div class="slide"><img src="https://images.pexels.com/photos/2360500/pexels-photo-2360500.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Slide 3" class="imgSlide"></div>
+          <!-- <div class="slide"><img src="images/image1.jpg" alt="Slide 1" class="imgSlide"></div>
+          <div class="slide"><img src="images/image2.jpg" alt="Slide 2" class="imgSlide"></div>
+          <div class="slide"><img src="images/image3.jpg" alt="Slide 3" class="imgSlide"></div> -->
+          <!-- Add more slides as needed -->
+        </div>
+        
+        <div class="prev" onclick="prevSlide()">&#10094;</div>
+        <div class="next" onclick="nextSlide()">&#10095;</div>
+    </div>
+    
+    <hr>
+
+    <h1 id="cat" class="font">Category</h1>
+    <section id="category">
+        <ul>
+            <li><img src="images/tshirt.png" alt=""></li>
+            <li><img src="images/cloth.png" alt=""></li>
+            <li><img src="images/jeans.png" alt=""></li>
+            <li><img src="images/skirt.png" alt=""></li>
+            <li><img src="images/cap.png" alt=""></li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <h1 id="cat" class="font">Products</h1>
+    <div class="products" id="one">
+        <div class="container">
+            <div class="card">
+                <div>
+                    <i class="fa-regular fa-heart"></i>
+                    <h1 class="font">T-Red</h1>
+                    <div class="proImg">
+                        <img src="images/red-devils-1596355_1280.jpg" alt="">
+                    </div>
+                    <h1 class="font price">₹699</h1>
+                    <button class="buy font">Buy Now</button>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <i class="fa-regular fa-heart"></i>
+                    <h1 class="font">Sweatshirt</h1>
+                    <div class="proImg">
+                        <img src="images/pink-sweater-front.jpg" alt="">
+                    </div>
+                    <h1 class="font price">₹999</h1>
+                    <button class="buy font">Buy Now</button>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <i class="fa-regular fa-heart"></i>
+                    <h1 class="font">Blue Cap</h1>
+                    <div class="proImg">
+                        <img src="images/green cap.webp" alt="">
+                    </div>
+                    <h1 class="font price">₹199</h1>
+                    <button class="buy font">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="products" id="two">
+        <div class="container">
+            <div class="card">
+                <div>
+                    <i class="fa-regular fa-heart"></i>
+                    <h1 class="font">BlueShirt</h1>
+                    <div class="proImg">
+                        <img src="images/blue shirt.jpg" alt="">
+                    </div>
+                    <h1 class="font price">₹699</h1>
+                    <button class="buy font">Buy Now</button>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <i class="fa-regular fa-heart"></i>
+                    <h1 class="font">T-Grey</h1>
+                    <div class="proImg">
+                        <img src="images/greytshir.jpg" alt="">
+                    </div>
+                    <h1 class="font price">₹999</h1>
+                    <button class="buy font" id="b">Buy Now</button>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <i class="fa-regular fa-heart"></i>
+                    <h1 class="font">BrownPants</h1>
+                    <div class="proImg">
+                        <img src="images/Brown sweatpants for sports -3.jpg" alt="">
+                    </div>
+                    <h1 class="font price">₹199</h1>
+                    <button class="buy font" >Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="extra">
+            <ul>
+                <li class="font">Terms and Condition</li>
+                <li class="font">Copyright</li>
+                <li class="font">Our Customers</li>
+                <li class="font">About us</li>
+                <li class="font">Help</li>
+            </ul>
+        </div>
+        <div class="" id="socialMedia">
+            <ul>
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-x-twitter"></i></li>
+                <li><i class="fa-brands fa-youtube"></i></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
